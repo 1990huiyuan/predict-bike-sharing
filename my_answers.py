@@ -94,7 +94,7 @@ class NeuralNetwork(object):
         hidden_error = np.dot(error,self.weights_hidden_to_output.T)
         
         # TODO: Backpropagated error terms - Replace these values with your calculations.
-        output_error_term = error*1
+        output_error_term = error*1 ##note in this case, error=output_error_term
         
         hidden_error_term = hidden_error*hidden_outputs*(1-hidden_outputs)
         
