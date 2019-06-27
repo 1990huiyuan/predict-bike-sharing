@@ -140,7 +140,7 @@ class NeuralNetwork(object):
 #########################################################
 # Set your hyperparameters here
 ##########################################################
-iterations = 4000
-learning_rate = 0.4
-hidden_nodes = 12
-output_nodes = 1
+iterations = 4000 ##multiple interations are tested and 4000 seems enough since validation error starts to increase
+learning_rate = 0.4 ## It seeems the results are not very sensitive to it when it is smaller than 0.5.
+hidden_nodes = 12 ## when number of hidden nodes keep increasing, there is no obvious improvement on errors.
+output_nodes = 1  ## 1 for regression problems.
